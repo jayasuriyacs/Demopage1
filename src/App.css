@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  background-color: #282c34;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.company-name {
+  color: #ffffff; 
+}
+
+/* src/App.css */
+
+/* App.css or a separate CSS file */
+
+.home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video Player Styles */
+.video-player {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Products Section */
+.products {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Swiper Styles */
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+}

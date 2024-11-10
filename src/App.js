@@ -1,7 +1,7 @@
 // src/App.js
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; // Import NavLink here
+import { HashRouter, Route, Routes, NavLink } from 'react-router-dom'; // Import NavLink here
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -10,7 +10,7 @@ import './App.css'; // Your existing CSS for the App
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <nav>
           <h3 className="company-name">Yugan Industries</h3>
@@ -27,7 +27,7 @@ const App = () => {
         </Routes>
         <Footer /> {/* Add the Footer here */}
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 

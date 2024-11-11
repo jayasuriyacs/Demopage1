@@ -5,24 +5,56 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+}
+
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.main-content {
+    flex: 1; /* This allows the main content to grow and take available space */
+    padding-bottom: 60px; /* Prevent content from hiding behind the footer */
 }
 
 .footer {
-    background-color: #333; /* Background color for the footer */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    padding: 20px; /* Padding */
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
+    left: 0;
+    bottom: 0; /* Aligns the footer to the bottom */
     width: 100%; /* Full width */
+    background-color: #282c34; /* Change to your desired color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Vertical padding */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+.footer-content {
+    margin: 0 auto;
 }
 
 /* Optional: Responsive adjustments */
 @media (max-width: 600px) {
     .footer {
         padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        padding: 10px; /* Further reduce padding for smaller screens */
+    }
+
+    .footer {
+        padding: 15px; /* Adjust footer padding for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px; /* Increase footer padding for very small screens */
+        font-size: 14px; /* Adjust font size for better readability */
     }
 }

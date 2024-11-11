@@ -1,7 +1,6 @@
 // src/components/About.js
 
 import React from 'react';
-import './About.css'; // Import your CSS file
 import headerImage from '../images/header-about-image.jpg'; // Adjust the path as necessary
 
 const About = () => {

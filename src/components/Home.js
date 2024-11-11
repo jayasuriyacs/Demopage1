@@ -6,7 +6,7 @@ import Slider from 'react-slick'; // Import Slider from react-slick
 import 'slick-carousel/slick/slick.css'; // Import slick styles
 import 'slick-carousel/slick/slick-theme.css'; // Import slick theme styles
 import image from '../images/image.jpg'; // Import your image here
-
+import './Home.css'; // Import your CSS file for styling
 
 const Home = () => {
   const products = [

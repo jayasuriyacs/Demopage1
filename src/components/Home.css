@@ -1,0 +1,53 @@
+/* Home.css */
+
+.home {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .video-container {
+    width: 100%; /* Full width for the video container */
+    margin-bottom: 20px; /* Space below the video */
+  }
+  
+  .products {
+    width: 100%; /* Full width for products section */
+  }
+  
+  .product-card {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .product-card {
+      margin: 0; /* Reset margin for mobile */
+    }
+  
+    h1 {
+      font-size: 1.5em; /* Adjust heading size for mobile */
+    }
+  
+    h2 {
+      font-size: 1.2em; /* Adjust subheading size for mobile */
+    }
+  
+    .video-container {
+      margin-bottom: 10px; /* Less space below video on mobile */
+    }
+  }
+  
+  /* Ensure slider is responsive */
+  .slick-slider {
+    margin: 0 -10px; /* Adjust margin for slider items */
+  }
+  
+  .slick-slide {
+    padding: 0 10px; /* Space between slides */
+  }
